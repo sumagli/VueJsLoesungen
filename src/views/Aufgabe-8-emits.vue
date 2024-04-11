@@ -4,7 +4,7 @@
 -->
 <script setup>
 import { ref } from "vue";
-import TextButton from "@/components/Aufgabe-8/textButton.vue";
+import TextButton from "../components/Aufgabe-8/TextButton.vue";
 const headline = ref("Veränder mich")
 
 const showText = (name) => {
@@ -24,7 +24,6 @@ const showText = (name) => {
         <TextButton name="der" @showText="showText" />
         <TextButton name="Babo" @showText="showText" />
         <TextButton name="ist" @showText="showText" />
-
     </div>
 </template>
 

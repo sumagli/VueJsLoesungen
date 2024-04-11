@@ -1,21 +1,28 @@
 <!-- 
-    Aufgabe 6: Anstatt die ele
+    Aufgabe 6: Sorge dafür, dass die Lampe an und aus über den Button geht. Verwende dabei keinen JavaScript Event-Listener.
 -->
 <script setup>
-import borderImage from "../components/Aufgabe-6/BorderImage.vue";
+import { ref } from "vue";
+const isLampOn = ref(false);
 </script>
 
 <template>
     <div class="container">
-        <borderImage path="https://t4.ftcdn.net/jpg/01/11/10/55/360_F_111105568_C0CRN1nRp2RwPD6hzEsv1kclLf9uOl5Q.jpg" />
-        <borderImage
-            path="https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?cs=srgb&dl=pexels-amir-ghoorchiani-1183434.jpg&fm=jpg" />
-        <borderImage
-            path="https://i0.wp.com/teamjimmyjoe.com/wp-content/uploads/2020/01/funny-pics-animal-mashup-gorilla-bird.jpg?ssl=1" />
+        <img v-if="isLampOn"
+            src="https://purepng.com/public/uploads/large/purepng.com-bulbbulblightenergy-bulbbright-lightclipart-14215264854132qwpb.png" />
+        <img v-else
+            src="https://purepng.com/public/uploads/large/purepng.com-bulbbulblightenergy-bulbbright-lightclipart-1421526485383ixhcs.png" />
+        <button class="button" @click="isLampOn = !isLampOn">Lampe an/aus</button>
     </div>
 </template>
 
 <style>
+img {
+    height: 400px;
+    margin-top: 20px;
+
+}
+
 .button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -23,6 +30,8 @@ import borderImage from "../components/Aufgabe-6/BorderImage.vue";
     min-width: 300px;
     cursor: pointer;
 }
+
+
 
 .container {
     display: flex;
