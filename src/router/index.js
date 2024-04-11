@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import("../views/Aufgabe-2-reaktivitaet.vue"),
     },
     {
+      path: "/Aufgabe-3",
+      name: "Aufgabe-3",
+      component: () => import("../views/Aufgabe-3-routing.vue"),
+    },
+    {
       path: "/Aufgabe-4",
       name: "Aufgabe-4",
       component: () =>
@@ -39,6 +44,11 @@ const router = createRouter({
       path: "/Aufgabe-8",
       name: "Aufgabe-8",
       component: () => import("../views/Aufgabe-8-emits.vue"),
+    },
+    {
+      path: "/Aufgabe-9",
+      name: "Aufgabe-9",
+      component: () => import("../views/Aufgabe-9-Shopping-List.vue"),
     },
   ],
 });

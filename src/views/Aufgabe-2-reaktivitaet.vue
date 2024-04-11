@@ -5,9 +5,9 @@
 
 <script setup>
 import { ref } from "vue";
-const msg = "Ich bin kein ref";
+const msg = ref("Ich bin ein ref");
 const click = () => {
-    msg = "Hat geklappt";
+    msg.value = "Hat geklappt";
 }
 </script>
 

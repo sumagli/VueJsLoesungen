@@ -5,12 +5,13 @@
 
 <script setup>
 
+let title = "Ich bin dynamisch";
 </script>
 
 
 <template>
     <div class="title">
-        <h1>Ich bin statisch</h1>
+        <h1>{{ title }}</h1>
     </div>
 </template>
 

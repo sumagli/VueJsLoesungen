@@ -16,8 +16,8 @@ const props = defineProps({
 
 <template>
     <p>
-        <span id="green">{{ price }}$ </span>
-        <span id="red">{{ price }}$ </span>
+        <span v-if="price >= 0" id="green">{{ price }}$ </span>
+        <span v-if="price < 0" id="red">{{ price }}$ </span>
         <span>{{ name }}</span>
     </p>
 

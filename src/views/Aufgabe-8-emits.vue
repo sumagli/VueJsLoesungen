@@ -4,9 +4,12 @@
 -->
 <script setup>
 import { ref } from "vue";
-import TextButton from "../components/Aufgabe-8/textButton.vue";
+import TextButton from "@/components/Aufgabe-8/textButton.vue";
 const headline = ref("Veränder mich")
 
+const showText = (name) => {
+    headline.value = name;
+}
 
 </script>
 
@@ -15,12 +18,12 @@ const headline = ref("Veränder mich")
 <template>
     <div class="container">
         <h1>{{ headline }}</h1>
-        <TextButton name="Chabos" />
-        <TextButton name="wissen" />
-        <TextButton name="wer" />
-        <TextButton name="der" />
-        <TextButton name="Babo" />
-        <TextButton name="ist" />
+        <TextButton name="Chabos" @showText="showText" />
+        <TextButton name="wissen" @showText="showText" />
+        <TextButton name="wer" @showText="showText" />
+        <TextButton name="der" @showText="showText" />
+        <TextButton name="Babo" @showText="showText" />
+        <TextButton name="ist" @showText="showText" />
 
     </div>
 </template>
