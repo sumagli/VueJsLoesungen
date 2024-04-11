@@ -41,10 +41,6 @@ const deleteItem = () => {
   transition: background-color 0.3s;
 }
 
-.item:hover {
-  background-color: #f9f9f9;
-}
-
 input[type="checkbox"] {
   margin-right: 10px;
 }

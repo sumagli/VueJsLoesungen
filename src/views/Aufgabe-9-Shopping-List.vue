@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import ListItem from "./components/Aufgabe 20/ListItem.vue";
+import ListItem from "../components/Aufgabe-9/ListItem.vue";
 
 const items = ref([]);
 const newItemName = ref("");
@@ -60,6 +60,10 @@ const calculateSum = () => {
     padding: 20px;
 }
 
+h1 {
+    color: #42b883;
+}
+
 .list-items,
 .item-creation,
 .counter-display {
@@ -83,7 +87,7 @@ input {
 button {
     padding: 10px 20px;
     margin-top: 5px;
-    background-color: #007bff;
+    background-color: #42b883;
     color: white;
     border: none;
     border-radius: 4px;
@@ -91,11 +95,11 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #42b88388;
 }
 
 .counter-display p {
     font-weight: bold;
-    color: #333;
+    color: #fcfcfc;
 }
 </style>

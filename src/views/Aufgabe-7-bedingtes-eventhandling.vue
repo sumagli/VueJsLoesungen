@@ -2,7 +2,7 @@
     Aufgabe 6: Anstatt die ele
 -->
 <script setup>
-import borderImage from "../components/Aufgabe-6/borderImage.vue";
+import borderImage from "../components/Aufgabe-6/BorderImage.vue";
 </script>
 
 <template>
