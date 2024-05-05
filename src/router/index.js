@@ -50,6 +50,11 @@ const router = createRouter({
       name: "Aufgabe-9",
       component: () => import("../views/Aufgabe-9-Shopping-List.vue"),
     },
+    {
+      path: "/NuxtShowcase",
+      name: "NuxtShowcase",
+      component: () => import("../views/NuxtShowcase.vue"),
+    },
   ],
 });
 
